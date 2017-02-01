@@ -13,6 +13,8 @@
 		28722C851E42496F001AA1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28722C841E42496F001AA1DE /* Assets.xcassets */; };
 		28722C881E42496F001AA1DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28722C861E42496F001AA1DE /* LaunchScreen.storyboard */; };
 		28722C931E42496F001AA1DE /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28722C921E42496F001AA1DE /* ExtensionsTests.swift */; };
+		28722CA01E4249AA001AA1DE /* UIColor+MarkitDigital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28722C9F1E4249AA001AA1DE /* UIColor+MarkitDigital.swift */; };
+		28722CA41E424B61001AA1DE /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28722CA31E424B61001AA1DE /* ColorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		28722C8E1E42496F001AA1DE /* ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28722C921E42496F001AA1DE /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		28722C941E42496F001AA1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28722C9F1E4249AA001AA1DE /* UIColor+MarkitDigital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+MarkitDigital.swift"; path = "Extensions/Color/UIColor+MarkitDigital.swift"; sourceTree = "<group>"; };
+		28722CA31E424B61001AA1DE /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		28722C7C1E42496F001AA1DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				28722C9D1E424986001AA1DE /* Color */,
 				28722C7D1E42496F001AA1DE /* AppDelegate.swift */,
 				28722C7F1E42496F001AA1DE /* ViewController.swift */,
 				28722C811E42496F001AA1DE /* Main.storyboard */,
@@ -92,8 +97,17 @@
 			children = (
 				28722C921E42496F001AA1DE /* ExtensionsTests.swift */,
 				28722C941E42496F001AA1DE /* Info.plist */,
+				28722CA31E424B61001AA1DE /* ColorTests.swift */,
 			);
 			path = ExtensionsTests;
+			sourceTree = "<group>";
+		};
+		28722C9D1E424986001AA1DE /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				28722C9F1E4249AA001AA1DE /* UIColor+MarkitDigital.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28722C801E42496F001AA1DE /* ViewController.swift in Sources */,
+				28722CA01E4249AA001AA1DE /* UIColor+MarkitDigital.swift in Sources */,
 				28722C7E1E42496F001AA1DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28722C931E42496F001AA1DE /* ExtensionsTests.swift in Sources */,
+				28722CA41E424B61001AA1DE /* ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +426,7 @@
 				28722C991E42496F001AA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28722C9A1E42496F001AA1DE /* Build configuration list for PBXNativeTarget "ExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +435,7 @@
 				28722C9C1E42496F001AA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

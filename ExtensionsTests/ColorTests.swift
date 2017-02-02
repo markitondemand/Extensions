@@ -80,10 +80,10 @@ class ColorTests: XCTestCase {
     
     func testHexStringWithOpacity() {
         XCTAssertEqual(UIColor(hexValue: "FFFFFF")!.cgColor.alpha, 1)
-        XCTAssertEqual(UIColor(hexValue:"FFFFFF00")!.cgColor.alpha, 0)
+        XCTAssertEqual(UIColor(hexValue: "FFFFFF00")!.cgColor.alpha, 0)
     }
     
-    func testRGBHex() {
+    func testCreateColorFromRGBHex() {
         // Uses the hex value "0C5383" - this is some kind of blue
         let color = UIColor(rgbHex: 807811)
         
@@ -92,5 +92,39 @@ class ColorTests: XCTestCase {
         
         XCTAssertEqual(color, comparedColor)
         
+    }
+    
+    func testGetIndividualColorValues() {
+        let color = UIColor(red: 0.25, green: 0.5, blue: 0.75, alpha: 1.0)
+        XCTAssertEqualWithAccuracy(0.25, color.redValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(0.5, color.greenValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(0.75, color.blueValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(1.0, color.alphaValue!, accuracy: 0.01)
+        
+        let whiteColor = UIColor.white
+        XCTAssertEqualWithAccuracy(1.0, whiteColor.redValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(1.0, whiteColor.greenValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(1.0, whiteColor.blueValue!, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(1.0, whiteColor.alphaValue!, accuracy: 0.01)
+    }
+    
+    func testGetHexValues() {
+        let hexNumber = 123456
+        let color = UIColor(rgbHex: hexNumber)
+        
+        XCTAssertEqual(color.rgbHex, hexNumber)
+        
+        let white = UIColor.white
+        
+        XCTAssertEqual(white.rgbHex, 16777215)
+    }
+    
+    
+    func testColorToHexString() {
+        let color = UIColor.black
+        XCTAssertEqual(color.hexString, "000000")
+        
+        let complexColor = UIColor(hexValue: "123456")!
+        XCTAssertEqual(complexColor.hexString, "123456")
     }
 }

@@ -2,7 +2,7 @@
 //
 
 import XCTest
-@testable import Extensions
+@testable import MDExtensions
 
 class StringTests: XCTestCase {
     

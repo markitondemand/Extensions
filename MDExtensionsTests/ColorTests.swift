@@ -2,7 +2,7 @@
 //
 
 import XCTest
-@testable import Extensions
+@testable import MDExtensions
 import UIKit
 import CoreGraphics
 

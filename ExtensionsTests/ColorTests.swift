@@ -1,8 +1,3 @@
-//
-//  ColorTests.swift
-//  Extensions
-//
-//  Created by Michael Leber on 2/1/17.
 //  Copyright © 2017 Markit. All rights reserved.
 //
 
@@ -29,16 +24,7 @@ class ColorTests: XCTestCase {
         XCTAssertNil(UIColor(hexValue: "12345"))
         XCTAssertNil(UIColor(hexValue: "1234567"))
         XCTAssertNil(UIColor(hexValue: "123456789"))
-    }
-
-    //@TODO: need to check the color space... this is just for documentation purposes in case a user of the library is interested in knowing what colorspace this is creating colors in
-//    func testHexFromStringCreatesRGBColorSpace() {
-//        let color = UIColor(hexValue: "AABBCCFF")!
-//        
-//        
-//        XCTAssertTrue(color.cgColor.colorSpace! === CGColorSpace(name: CGColorSpace.genericRGBLinear))
-//    }
-    
+    }    
     
     func testWhiteHexStringProducesWhiteColor() {
         let color = UIColor(hexValue: "FFFFFF")!

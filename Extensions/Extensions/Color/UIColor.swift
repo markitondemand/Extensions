@@ -138,30 +138,8 @@ extension UIColor {
         }
     }
     
-//    public func hexString() -> String {
-//        return String(format: "%0.6X", arguments: self.rgbHex)
-//        NSString* hexString = String("%0.6X", (unsigned int)self.rgbHex];
-//        return hexString;
-//    }
-    
     private func colorSpaceModel() -> CGColorSpaceModel? {
         return self.cgColor.colorSpace?.model
     }
 }
-
-//extension UIColor {
-//    
-//    /// If this color can be converted to a hex string than it will be printed in the following format for debugging "{rr, gg, bb, aa}"
-//    open override var description: String {
-//        get {
-//            guard let string = self.hexString else {
-//                for char in self.hexString?.characters {
-//                    
-//                }
-//                return super.description
-//            }
-//            return string
-//        }
-//    }
-//}
 

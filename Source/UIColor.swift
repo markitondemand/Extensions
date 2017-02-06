@@ -6,21 +6,21 @@ import UIKit
 
 // MARK: Constructors
 extension UIColor {
-    /// Creates a new color with a given hex string. The hex should be "RRGGBBAA" (AA being alpha or opacity). Optionally the alpha channel can be omitted and 1.0 will be used
+    /// Creates a new color with a given hex string. The hex should be "RRGGBBAA" (AA being alpha or opacity). Optionally the alpha channel can be omitted and a value of 1.0 will be used. 
+    /// If the input string is malformed, or cannot be covnerted to a hex number, nil will be returned.
     ///
     /// - Parameter hexValue: The incoming hex string
     public convenience init?(hexValue: String) {
         var hexValue = hexValue
+        
         // Clean off any leading # if it is there.
         hexValue = hexValue.trimmingCharacters(in: CharacterSet(charactersIn: "#"))
-        
         // Unsupported length
         guard hexValue.characters.count == 6 || hexValue.characters.count == 8 else {
             return nil
         }
         
-        var alphaComponent = CGFloat(1.0)
-        
+        var alphaComponent: CGFloat = 1.0
         // If input is 8 characters. extract the alpha value
         if hexValue.characters.count == 8 {
             guard let hexNumber = Int(hexValue.substring(from:hexValue.index(hexValue.endIndex, offsetBy: -2)), radix:16) else {
@@ -36,13 +36,8 @@ extension UIColor {
         guard let hexNumber = Int(hexValue, radix:16) else {
             return nil
         }
-        
-        
         self.init(rgbHex: hexNumber, alpha: alphaComponent)
     }
-    
-    
-    //TODO: to possibly improve error handling, we might want to create a type "HEXColor" that is passed to this constructor.... It could handle initializng the proper HEX format (0xFFFFFF + FF for alpha) and handle the optional alpha more gracefully. The fear here is someone inputs 6 HEX and not alpha and an incorrect color is generated. Or the value could be beyond the maximum range 0xFFFFFFFF.
     
     /// Creates a new UIColor object using a given hex integer. This will create a color with 100% alpha. This should be in the range from 0x0 to 0xFFFFFF
     ///

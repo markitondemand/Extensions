@@ -37,8 +37,6 @@
 		286545681E45216B003964D0 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		286545691E45216B003964D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2865456A1E45216B003964D0 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
-		28722C871E42496F001AA1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28722C891E42496F001AA1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 		28722C711E42496F001AA1DE = {
 			isa = PBXGroup;
 			children = (
-				28722C7C1E42496F001AA1DE /* Extensions */,
 				286545521E452117003964D0 /* MDExtensions */,
 				2865455D1E452117003964D0 /* MDExtensionsTests */,
 				28722C7B1E42496F001AA1DE /* Products */,
@@ -107,15 +104,6 @@
 				286545591E452117003964D0 /* MDExtensionsTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		28722C7C1E42496F001AA1DE /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				28722C861E42496F001AA1DE /* LaunchScreen.storyboard */,
-				28722C891E42496F001AA1DE /* Info.plist */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,17 +244,6 @@
 			targetProxy = 2865455B1E452117003964D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		28722C861E42496F001AA1DE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28722C871E42496F001AA1DE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		286545631E452117003964D0 /* Debug */ = {
@@ -445,6 +422,7 @@
 				286545641E452117003964D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286545651E452117003964D0 /* Build configuration list for PBXNativeTarget "MDExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +431,7 @@
 				286545671E452117003964D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28722C751E42496F001AA1DE /* Build configuration list for PBXProject "Extensions" */ = {
 			isa = XCConfigurationList;

@@ -37,22 +37,28 @@ extension UIColor {
         self.init(rgbaHex: hexNumber)
     }
     
-    /// Creates a new UIColor object using a given hex integer. This accounts for having a tail alpha compoennt. This should be in the range from 0x0 to 0xFFFFFFFF
+    /// Creates a new UIColor object using a given hex integer. This accounts for having a tail alpha compoennt. This must be in the range from 0x0 to 0xFFFFFFFF or an error is reaised
     ///
     /// - Parameter rgbaHex: The input integer, interpreted as a hex value
     public convenience init(rgbaHex:Int) {
+        //TODO: to improve error handling, we might want to create a type "HEXColor" that is passed to this constructor.... It could handle initializng the proper HEX format (0xFFFFFF + FF for alpha) and handle the optional alpha more gracefully. The fear here is someone inputs 6 HEX and not alpha and an incorrect color is generated. Or the value could be beyond the maximum range 0xFFFFFFFF.
+        precondition(rgbaHex > 0x0 && rgbaHex <= 0xFFFFFFFF)
+        
         let r = (rgbaHex >> 24) & 0xFF
         let g = (rgbaHex >> 16) & 0xFF
         let b = (rgbaHex >> 8) & 0xFF
         let alpha = (rgbaHex) & 0xFF
+        
         self.init(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha:CGFloat(alpha)/255.0)
     }
     
     
-    /// Creates a new UIColor object using a given hex integer. This will create a color with 100% alpha.
+    /// Creates a new UIColor object using a given hex integer. This will create a color with 100% alpha. This should be in the range from 0x0 to 0xFFFFFF
     ///
     /// - Parameter rgbHex: The inout integer, interpreted as a hex value
     public convenience init(rgbHex:Int) {
+        precondition(rgbHex > 0x0 && rgbHex <= 0xFFFFFF)
+
         let r = (rgbHex >> 16) & 0xFF
         let g = (rgbHex >> 8) & 0xFF
         let b = (rgbHex) & 0xFF

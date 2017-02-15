@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		280673D11E53D2CF00CD3518 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		280673D31E53D2FC00CD3518 /* CollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
+		280673D51E53D3FA00CD3518 /* MD-Extensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; indentWidth = 2; path = "MD-Extensions.podspec"; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		286545461E4520BB003964D0 /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		286545471E4520BB003964D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		286545481E4520BB003964D0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		28722C711E42496F001AA1DE = {
 			isa = PBXGroup;
 			children = (
+				280673D51E53D3FA00CD3518 /* MD-Extensions.podspec */,
 				286545521E452117003964D0 /* MDExtensions */,
 				2865455D1E452117003964D0 /* MDExtensionsTests */,
 				28722C7B1E42496F001AA1DE /* Products */,

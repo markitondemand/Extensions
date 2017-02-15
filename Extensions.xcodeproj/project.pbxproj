@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280673D21E53D2CF00CD3518 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280673D11E53D2CF00CD3518 /* Collection.swift */; };
+		280673D41E53D2FC00CD3518 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280673D31E53D2FC00CD3518 /* CollectionTests.swift */; };
 		2865455A1E452117003964D0 /* MDExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286545511E452117003964D0 /* MDExtensions.framework */; };
 		286545611E452117003964D0 /* MDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 286545531E452117003964D0 /* MDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2865456B1E45216B003964D0 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545681E45216B003964D0 /* ColorTests.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280673D11E53D2CF00CD3518 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		280673D31E53D2FC00CD3518 /* CollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
 		286545461E4520BB003964D0 /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		286545471E4520BB003964D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		286545481E4520BB003964D0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 				286545461E4520BB003964D0 /* CharacterSet.swift */,
 				286545471E4520BB003964D0 /* String.swift */,
 				286545481E4520BB003964D0 /* UIColor.swift */,
+				280673D11E53D2CF00CD3518 /* Collection.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -84,6 +89,7 @@
 				286545691E45216B003964D0 /* Info.plist */,
 				286545681E45216B003964D0 /* ColorTests.swift */,
 				2865456A1E45216B003964D0 /* StringTests.swift */,
+				280673D31E53D2FC00CD3518 /* CollectionTests.swift */,
 			);
 			path = MDExtensionsTests;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				2865456F1E452196003964D0 /* String.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
 				2865456E1E452193003964D0 /* CharacterSet.swift in Sources */,
+				280673D21E53D2CF00CD3518 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2865456D1E45216B003964D0 /* StringTests.swift in Sources */,
+				280673D41E53D2FC00CD3518 /* CollectionTests.swift in Sources */,
 				2865456B1E45216B003964D0 /* ColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

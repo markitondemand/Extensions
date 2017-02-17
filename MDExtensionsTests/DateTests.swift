@@ -11,7 +11,7 @@ import XCTest
 @testable import MDExtensions
 
 class DateTests: XCTestCase {
-    
+    let oneMSDateSecond: Double = 1/86400
 
     func testSimpleMSDateCases() {
         XCTAssertEqual(Date(MSDate: 0), Date(timeIntervalSince1970: -2209161600))
@@ -21,7 +21,17 @@ class DateTests: XCTestCase {
     }
     
     func testFractionalMSDateCases() {
-        XCTAssertEqual(Date(MSDate:25569.00001157407), Date(timeIntervalSince1970:1))
+        // 1  second after 0 unix date
+        let oneDayPlusOneSecond: Double = 25569+oneMSDateSecond
+        XCTAssertEqualWithAccuracy(Date(MSDate:oneDayPlusOneSecond).timeIntervalSince1970, Date(timeIntervalSince1970:1).timeIntervalSince1970, accuracy: 0.000001)
+        XCTAssertEqual(Date(MSDate:25569.5), Date(timeIntervalSince1970: 43200))
+        XCTAssertEqual(Date(MSDate:25569.25), Date(timeIntervalSince1970: 21600))
     }
     
+    func testConvertToMSDate() {
+        XCTAssertEqual(Date(timeIntervalSince1970: 0).MSDate, 25569)
+        XCTAssertEqual(Date(timeIntervalSince1970: 43200).MSDate, 25569.5)
+        XCTAssertEqualWithAccuracy(Date(timeIntervalSince1970: 1).MSDate, 25569 + oneMSDateSecond, accuracy: 0.000001)
+        
+    }
 }

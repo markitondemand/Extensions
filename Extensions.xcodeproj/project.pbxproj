@@ -18,6 +18,8 @@
 		2865456E1E452193003964D0 /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545461E4520BB003964D0 /* CharacterSet.swift */; };
 		2865456F1E452196003964D0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545471E4520BB003964D0 /* String.swift */; };
 		286545701E452199003964D0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545481E4520BB003964D0 /* UIColor.swift */; };
+		28AD697A1E5769D300B69BA6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD69791E5769D300B69BA6 /* Date.swift */; };
+		28AD697C1E576B1500B69BA6 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		286545681E45216B003964D0 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		286545691E45216B003964D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2865456A1E45216B003964D0 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		28AD69791E5769D300B69BA6 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				286545471E4520BB003964D0 /* String.swift */,
 				286545481E4520BB003964D0 /* UIColor.swift */,
 				280673D11E53D2CF00CD3518 /* Collection.swift */,
+				28AD69791E5769D300B69BA6 /* Date.swift */,
 				282680911E56671800A56838 /* DateFormatter.swift */,
 			);
 			path = Source;
@@ -97,6 +102,7 @@
 				2865456A1E45216B003964D0 /* StringTests.swift */,
 				280673D31E53D2FC00CD3518 /* CollectionTests.swift */,
 				282680931E566AEA00A56838 /* DateTests.swift */,
+				28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */,
 			);
 			path = MDExtensionsTests;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2865456F1E452196003964D0 /* String.swift in Sources */,
+				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
 				2865456E1E452193003964D0 /* CharacterSet.swift in Sources */,
 				280673D21E53D2CF00CD3518 /* Collection.swift in Sources */,
@@ -248,6 +255,7 @@
 			files = (
 				2865456D1E45216B003964D0 /* StringTests.swift in Sources */,
 				280673D41E53D2FC00CD3518 /* CollectionTests.swift in Sources */,
+				28AD697C1E576B1500B69BA6 /* DateFormatterTests.swift in Sources */,
 				2865456B1E45216B003964D0 /* ColorTests.swift in Sources */,
 				282680941E566AEA00A56838 /* DateTests.swift in Sources */,
 			);

@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
 
-  s.ios.framework  = 'UIKit'
+  s.ios.framework = 'UIKit'
 end

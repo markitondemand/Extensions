@@ -18,7 +18,7 @@ class ColorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testNullableIntiializer() {
+    func testNullableInitializer() {
         
         XCTAssertNil(UIColor(hexValue: ""))
         XCTAssertNil(UIColor(hexValue: "12345"))

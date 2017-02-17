@@ -74,10 +74,10 @@
 		286545451E4520BB003964D0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				286545461E4520BB003964D0 /* CharacterSet.swift */,
-				286545471E4520BB003964D0 /* String.swift */,
 				286545481E4520BB003964D0 /* UIColor.swift */,
+				286545471E4520BB003964D0 /* String.swift */,
 				280673D11E53D2CF00CD3518 /* Collection.swift */,
+				286545461E4520BB003964D0 /* CharacterSet.swift */,
 				28AD69791E5769D300B69BA6 /* Date.swift */,
 				282680911E56671800A56838 /* DateFormatter.swift */,
 			);

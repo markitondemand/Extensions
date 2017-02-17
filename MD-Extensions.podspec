@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MD-Extensions'
-  s.version = '0.3'
+  s.version = '0.4'
   s.license = 'Proprietary'
   s.summary = 'Swift extensions for the iOS mobile team'
   s.homepage = 'https://stash.mgmt.local/projects/IOSLIB/repos/md-extensions'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
 
-  s.ios.framework  = 'UIKit'
+  s.ios.framework = 'UIKit'
 end

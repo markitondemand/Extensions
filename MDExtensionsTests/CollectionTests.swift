@@ -10,6 +10,6 @@ class CollectionTests: XCTestCase {
         let arr = ["alpha", "bravo", "charlie"]
         
         XCTAssertNil(arr[safe: 3])
-        XCTAssertEqual(arr[0], "alpha")
+        XCTAssertEqual(arr[safe: 0], "alpha")
     }
 }

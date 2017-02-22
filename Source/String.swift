@@ -7,8 +7,18 @@ import Foundation
 
 @available(iOS 10, *)
 extension String {
+    
+    /// Returns a new string from the current string encoding any values that are not allowed within a URLQuery.
+    ///
+    /// - Returns: A new string encoded to work within a URLQuery
     public func stringByEncodingForURLQuery() -> String {
         return self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? self
+    }
+    
+    
+    /// Encodes the current string to work within a URLQuery.
+    public mutating func encodeForURLQuery() {
+        self = self.stringByEncodingForURLQuery()
     }
 }
 

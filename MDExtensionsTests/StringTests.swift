@@ -21,6 +21,17 @@ class StringTests: XCTestCase {
         XCTAssertEqual("?".stringByEncodingForURLQuery(), "?")
         XCTAssertEqual("/".stringByEncodingForURLQuery(), "/")
         XCTAssertEqual("{}".stringByEncodingForURLQuery(), "%7B%7D")
+        
+        let testURL = "http://dev.markitondemand.com/Api/v2/Lookup?input=aapl=123"
+        let encoded = testURL.stringByEncodingForURLQuery()
+        XCTAssertEqual(testURL, encoded)
+        
+        // Mutable function
+        var string = "{}"
+        string.encodeForURLQuery()
+        let same = string
+        XCTAssertEqual(string, same)
+        XCTAssertEqual(string, "%7B%7D")
     }
     
     func testSubstringOperations() {

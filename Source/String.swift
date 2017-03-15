@@ -7,8 +7,18 @@ import Foundation
 
 @available(iOS 10, *)
 extension String {
+    
+    /// Returns a new string from the current string encoding any values that are not allowed within a URLQuery.
+    ///
+    /// - Returns: A new string encoded to work within a URLQuery
     public func stringByEncodingForURLQuery() -> String {
         return self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? self
+    }
+    
+    
+    /// Encodes the current string to work within a URLQuery.
+    public mutating func encodeForURLQuery() {
+        self = self.stringByEncodingForURLQuery()
     }
 }
 
@@ -39,5 +49,36 @@ extension String {
     public func substring(with: Range<Int>) -> String {
         let indexRange = self.index(startIndex, offsetBy: with.lowerBound)..<self.index(startIndex, offsetBy: with.upperBound)
         return self.substring(with: indexRange)
+    }
+}
+
+extension UIColor
+{
+    func toHexString() -> String
+    {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let rgba:Int = Int(r*255.0)<<24 | Int(g*255.0)<<16 | Int(b*255.0)<<8 | Int(a*255.0)
+        
+        return String(format:"#%08x", rgba)
+    }
+}
+
+
+// MARK: - Color support
+extension String
+{
+    
+    /// Try to convert a string to a color. The string must be in a valid hex form (i.e. "#FFFFFF" or "FFFFFF" or "#FFFFFFFF"). Please see the init(hexValue:) constructor for more information
+    ///
+    /// - Returns: The value as a UIColor, or nil if a valid color could not be made.
+    func toColor() -> UIColor?
+    {
+        return UIColor(hexValue: self)
     }
 }

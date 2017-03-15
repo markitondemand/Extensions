@@ -9,7 +9,7 @@ import Foundation
 /// - Parameters:
 ///   - left: The dictionary to add elements to
 ///   - right: The dictionary that will have its elements added from
-func +=<K, V> (left: inout [K : V], right: [K : V]) {
+public func +=<K, V> (left: inout [K : V], right: [K : V]) {
     for (k, v) in right {
         left[k] = v
     }
@@ -22,7 +22,7 @@ func +=<K, V> (left: inout [K : V], right: [K : V]) {
 ///   - left: The left dictionary
 ///   - right: The right dictionary
 /// - Returns: A new dictionary with values from both the left and right right
-func +<K, V> (left: [K : V], right: [K : V]) -> [K: V] {
+public func +<K, V> (left: [K : V], right: [K : V]) -> [K: V] {
     var left = left
     
     for (key, value) in right {

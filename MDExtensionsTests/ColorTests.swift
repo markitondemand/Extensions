@@ -53,6 +53,13 @@ class ColorTests: XCTestCase {
         XCTAssertEqualWithAccuracy(color.cgColor.alpha, 0.5, accuracy: 0.01)
     }
     
+    func testComplexColor() {
+        let color = UIColor(hexValue: "#8CF442AA")!
+        let comparedColor = UIColor(red: 140/255, green: 244/255, blue: 66/255, alpha: 170/255)
+        
+        XCTAssertEqual(color.cgColor.components!, comparedColor.cgColor.components!)
+    }
+    
     func testSingleColors() {
         let redColor = UIColor(hexValue: "FF0000")!
         let greenColor = UIColor(hexValue: "00FF00")!

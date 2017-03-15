@@ -11,6 +11,8 @@
 		280673D41E53D2FC00CD3518 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280673D31E53D2FC00CD3518 /* CollectionTests.swift */; };
 		282680921E56671800A56838 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282680911E56671800A56838 /* DateFormatter.swift */; };
 		282680941E566AEA00A56838 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282680931E566AEA00A56838 /* DateTests.swift */; };
+		28440B6D1E79A64D00E00667 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B6C1E79A64D00E00667 /* Dictionary.swift */; };
+		28440B6F1E79A79000E00667 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B6E1E79A79000E00667 /* DictionaryTests.swift */; };
 		2865455A1E452117003964D0 /* MDExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286545511E452117003964D0 /* MDExtensions.framework */; };
 		286545611E452117003964D0 /* MDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 286545531E452117003964D0 /* MDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2865456B1E45216B003964D0 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545681E45216B003964D0 /* ColorTests.swift */; };
@@ -38,6 +40,10 @@
 		280673D51E53D3FA00CD3518 /* MD-Extensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; indentWidth = 2; path = "MD-Extensions.podspec"; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		282680911E56671800A56838 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		282680931E566AEA00A56838 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		28440B6C1E79A64D00E00667 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		28440B6E1E79A79000E00667 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		28440B711E79B45D00E00667 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		28440B721E79B45D00E00667 /* MD-Extensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MD-Extensions.podspec"; sourceTree = SOURCE_ROOT; };
 		286545461E4520BB003964D0 /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		286545471E4520BB003964D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		286545481E4520BB003964D0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -71,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28440B701E79B43A00E00667 /* Cocoapods metadata */ = {
+			isa = PBXGroup;
+			children = (
+				28440B721E79B45D00E00667 /* MD-Extensions.podspec */,
+				28440B711E79B45D00E00667 /* LICENSE */,
+			);
+			name = "Cocoapods metadata";
+			sourceTree = "<group>";
+		};
 		286545451E4520BB003964D0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +95,7 @@
 				286545461E4520BB003964D0 /* CharacterSet.swift */,
 				28AD69791E5769D300B69BA6 /* Date.swift */,
 				282680911E56671800A56838 /* DateFormatter.swift */,
+				28440B6C1E79A64D00E00667 /* Dictionary.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -87,6 +103,7 @@
 		286545521E452117003964D0 /* MDExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				28440B701E79B43A00E00667 /* Cocoapods metadata */,
 				286545451E4520BB003964D0 /* Source */,
 				286545531E452117003964D0 /* MDExtensions.h */,
 				286545541E452117003964D0 /* Info.plist */,
@@ -103,6 +120,7 @@
 				280673D31E53D2FC00CD3518 /* CollectionTests.swift */,
 				282680931E566AEA00A56838 /* DateTests.swift */,
 				28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */,
+				28440B6E1E79A79000E00667 /* DictionaryTests.swift */,
 			);
 			path = MDExtensionsTests;
 			sourceTree = "<group>";
@@ -244,6 +262,7 @@
 				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
 				2865456E1E452193003964D0 /* CharacterSet.swift in Sources */,
+				28440B6D1E79A64D00E00667 /* Dictionary.swift in Sources */,
 				280673D21E53D2CF00CD3518 /* Collection.swift in Sources */,
 				282680921E56671800A56838 /* DateFormatter.swift in Sources */,
 			);
@@ -258,6 +277,7 @@
 				28AD697C1E576B1500B69BA6 /* DateFormatterTests.swift in Sources */,
 				2865456B1E45216B003964D0 /* ColorTests.swift in Sources */,
 				282680941E566AEA00A56838 /* DateTests.swift in Sources */,
+				28440B6F1E79A79000E00667 /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

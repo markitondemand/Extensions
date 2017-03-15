@@ -13,10 +13,6 @@ class DateFormatterTests: XCTestCase {
         let UTC = TimeZone(identifier: "UTC")!
         XCTAssertEqual(DateFormatter.string(from:Date(timeIntervalSince1970: 441788400), format: "yyyyZ", timeZone:UTC), "1984+0000")
 
-        // Test uses local time zone as default
-        let timezone = TimeZone.current.abbreviation()!
-        XCTAssertEqual(DateFormatter.string(from:Date(timeIntervalSince1970: 441788400), format: "yyyyz"), "1984\(timezone)")
-
         XCTAssertEqual(DateFormatter.string(from:Date(timeIntervalSince1970: 441788400), format: "yyyy"), "1984")
     }
     

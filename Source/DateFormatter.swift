@@ -22,7 +22,15 @@ extension DateFormatter {
         return formatter.string(from: date)
     }
     
-    // Possible TODO - Throw errors instead of optional.
+    // Possible TODO - Throw errors instead of optional return.
+    /// Creates a date object from a given input string. Nil will be returned if the date cannot be created based on the input parameters
+    ///
+    /// - Parameters:
+    ///   - dateString: The date string to attempt to turn into a date object
+    ///   - format: The dateformat of the input
+    ///   - timeZone: The timezone to use. Default is TimeZone.current
+    ///   - locale: The locale to use. Default is Locale.current
+    /// - Returns: The dateString as a Date object, or nil
     public class func date(from dateString: String, format: String, timeZone: TimeZone = TimeZone.current, locale: Locale = Locale.current) -> Date? {
         
         let formatter = self.dateFormatter(format: format)

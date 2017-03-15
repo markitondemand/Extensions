@@ -51,3 +51,34 @@ extension String {
         return self.substring(with: indexRange)
     }
 }
+
+extension UIColor
+{
+    func toHexString() -> String
+    {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let rgba:Int = Int(r*255.0)<<24 | Int(g*255.0)<<16 | Int(b*255.0)<<8 | Int(a*255.0)
+        
+        return String(format:"#%08x", rgba)
+    }
+}
+
+
+// MARK: - Color support
+extension String
+{
+    
+    /// Try to convert a string to a color. The string must be in a valid hex form (i.e. "#FFFFFF" or "FFFFFF" or "#FFFFFFFF"). Please see the init(hexValue:) constructor for more information
+    ///
+    /// - Returns: The value as a UIColor, or nil if a valid color could not be made.
+    func toColor() -> UIColor?
+    {
+        return UIColor(hexValue: self)
+    }
+}

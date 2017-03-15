@@ -28,7 +28,7 @@ extension UIColor {
             }
             alphaComponent = CGFloat(hexNumber)/255.0
             
-            hexValue = hexValue.substring(from: hexValue.index(hexValue.endIndex, offsetBy:-2))
+            hexValue = hexValue.substring(to: hexValue.index(hexValue.endIndex, offsetBy:-2))
         }
         
         

@@ -52,6 +52,30 @@ class StringTests: XCTestCase {
         // test complex characters
         XCTAssertEqual("Strings are 易 and 繁".substring(with:12..<19), "易 and 繁")
     }
+    
+    // Color
+    func testGenerateColorFromString() {
+        let notColorString = "Some String"
+        
+        XCTAssertNil(notColorString.toColor())
+        
+        let colorString = "#AABBCCFF"
+        XCTAssertNotNil(colorString.toColor())
+        
+        let noHashNoAlphaColor = "AABBCC".toColor()
+        XCTAssertNotNil(noHashNoAlphaColor)
+        
+        
+    }
+    
+    func testGenerateStringFromColor() {
+        let whiteColor = UIColor.white
+        
+        XCTAssertEqual(whiteColor.toHexString(), "#FFFFFFFF")
+        
+        let complexColor = UIColor(hexValue: "#FC17AD45")
+        XCTAssertEqual(complexColor?.toHexString(), "#FC17AD45")
+    }
 }
 
 class CharacterSetTests: XCTestCase {

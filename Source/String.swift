@@ -54,7 +54,15 @@ extension String {
 
 extension UIColor
 {
-    func toHexString() -> String
+    
+    /// Returns a color to a valid Hex String output prefixed with "#" in the form #RRGGBBAA
+    /// ```
+    /// UIColor.white.toHextString()
+    /// // outputs "#FFFFFFFF"
+    /// ```
+    ///
+    /// - Returns: The color as a hex string value in the form #RRGGBBAA
+    public func toHexString() -> String
     {
         var r:CGFloat = 0
         var g:CGFloat = 0
@@ -65,7 +73,7 @@ extension UIColor
         
         let rgba:Int = Int(r*255.0)<<24 | Int(g*255.0)<<16 | Int(b*255.0)<<8 | Int(a*255.0)
         
-        return String(format:"#%08x", rgba)
+        return String(format:"#%08x", rgba).uppercased()
     }
 }
 
@@ -77,7 +85,7 @@ extension String
     /// Try to convert a string to a color. The string must be in a valid hex form (i.e. "#FFFFFF" or "FFFFFF" or "#FFFFFFFF"). Please see the init(hexValue:) constructor for more information
     ///
     /// - Returns: The value as a UIColor, or nil if a valid color could not be made.
-    func toColor() -> UIColor?
+    public func toColor() -> UIColor?
     {
         return UIColor(hexValue: self)
     }

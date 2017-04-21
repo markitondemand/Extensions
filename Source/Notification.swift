@@ -18,7 +18,7 @@ import Foundation
 /// NotificationCenter.default.post(name: MyNotification.ThingOne, object: nil, userInfo: nil)
 /// ```
 ///
-protocol NotificationName {
+public protocol NotificationName {
     
     /// Returns the expected Notification.Name for
     var name: Notification.Name { get }
@@ -27,7 +27,7 @@ protocol NotificationName {
 
 // MARK: - RawRepresntable Extension
 // This extension creates the default functionality required for the .name property from the protocol above to work on any enum that is also RawRepresentable (e.g. any enum that is a String is also RawRepresentable)
-extension RawRepresentable where RawValue == String, Self: NotificationName {
+public extension RawRepresentable where RawValue == String, Self: NotificationName {
     var name: Notification.Name {
         get {
             return Notification.Name(self.rawValue)

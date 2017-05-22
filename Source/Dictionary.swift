@@ -4,7 +4,7 @@
 import Foundation
 
 
-/// += operator for Dictionary. This takes the elements of the dictinary on the right and adds them to the elements of the dictionary on the left. Items on the left will be overwritten in the event of a key collision
+/// += operator for Dictionary. This takes the elements of the dictionary on the right and adds them to the elements of the dictionary on the left. Items on the left will be overwritten in the event of a key collision
 ///
 /// - Parameters:
 ///   - left: The dictionary to add elements to

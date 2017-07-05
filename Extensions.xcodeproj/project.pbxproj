@@ -26,6 +26,7 @@
 		28B5CC451ECF97A2001271A1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC441ECF97A2001271A1 /* UIImage.swift */; };
 		28B5CC471ECF9ABC001271A1 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */; };
 		28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */; };
+		28F0412C1F0D5835002563DE /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0412B1F0D5835002563DE /* Segue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		28B5CC441ECF97A2001271A1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		28F0412B1F0D5835002563DE /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				28440B6C1E79A64D00E00667 /* Dictionary.swift */,
 				288E55621E96EE910057153A /* Notification.swift */,
 				28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */,
+				28F0412B1F0D5835002563DE /* Segue.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -271,6 +274,7 @@
 				2865456F1E452196003964D0 /* String.swift in Sources */,
 				28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */,
 				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
+				28F0412C1F0D5835002563DE /* Segue.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
 				2865456E1E452193003964D0 /* CharacterSet.swift in Sources */,
 				28B5CC451ECF97A2001271A1 /* UIImage.swift in Sources */,

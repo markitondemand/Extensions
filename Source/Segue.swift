@@ -4,7 +4,7 @@
 import Foundation
 
 
-/// Adopt this protocol on any enum that you want to use for the identifiers of a Segue. Declaring the enum as a rawtype of "String" will give you a base implementation of the "identifier" var that simply returns the rawValue
+/// Adopt this protocol on any type that you want to use for the identifiers of a Segue. Declaring the enum as a rawtype of "String" will give you a base implementation of the "identifier" var that simply returns the rawValue
 public protocol SegueIdentifier {
     var identifier: String { get }
 }

@@ -13,10 +13,17 @@
 # Update this, if you use features of a newer version
 fastlane_version "2.39.2"
 
+# base fastfile
+import_from_git(url: 'ssh://git@stash.mgmt.local/mr/markit-fastlane.git', path: 'fastlane/Fastfile')
+
 default_platform :ios
 
 platform :ios do
-  before_all do    
+  before_all do
+      
+    xcversion(
+      version: "8.3.2"
+    )
   end
 
   desc "Runs all the tests"

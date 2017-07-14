@@ -137,3 +137,17 @@ extension UIColor {
     }
 }
 
+
+// MARK: - image from color
+extension UIColor {
+    
+    /// Attemps to convert the current UIColor into a UIImage, if possible. If no size is provided, an image of size (1,1) will be returned
+    ///
+    /// - Returns: A UIImage from the given color,
+    public func imageFromColorOfSize(_ size: CGSize? = nil) -> UIImage? {
+        guard let size = size else {
+            return UIImage.imageFromColor(self)
+        }
+        return UIImage.imageFromColor(self, size: size)
+    }
+}

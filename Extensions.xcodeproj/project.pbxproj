@@ -23,6 +23,10 @@
 		288E55631E96EE910057153A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E55621E96EE910057153A /* Notification.swift */; };
 		28AD697A1E5769D300B69BA6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD69791E5769D300B69BA6 /* Date.swift */; };
 		28AD697C1E576B1500B69BA6 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */; };
+		28B5CC451ECF97A2001271A1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC441ECF97A2001271A1 /* UIImage.swift */; };
+		28B5CC471ECF9ABC001271A1 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */; };
+		28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */; };
+		28F0412C1F0D5835002563DE /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0412B1F0D5835002563DE /* Segue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		288E55621E96EE910057153A /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		28AD69791E5769D300B69BA6 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
+		28B5CC441ECF97A2001271A1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
+		28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		28F0412B1F0D5835002563DE /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				286545481E4520BB003964D0 /* UIColor.swift */,
+				28B5CC441ECF97A2001271A1 /* UIImage.swift */,
 				286545471E4520BB003964D0 /* String.swift */,
 				280673D11E53D2CF00CD3518 /* Collection.swift */,
 				286545461E4520BB003964D0 /* CharacterSet.swift */,
@@ -98,6 +107,8 @@
 				282680911E56671800A56838 /* DateFormatter.swift */,
 				28440B6C1E79A64D00E00667 /* Dictionary.swift */,
 				288E55621E96EE910057153A /* Notification.swift */,
+				28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */,
+				28F0412B1F0D5835002563DE /* Segue.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -123,6 +134,7 @@
 				282680931E566AEA00A56838 /* DateTests.swift */,
 				28AD697B1E576B1500B69BA6 /* DateFormatterTests.swift */,
 				28440B6E1E79A79000E00667 /* DictionaryTests.swift */,
+				28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */,
 			);
 			path = MDExtensionsTests;
 			sourceTree = "<group>";
@@ -260,9 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2865456F1E452196003964D0 /* String.swift in Sources */,
+				28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */,
 				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
+				28F0412C1F0D5835002563DE /* Segue.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
 				2865456E1E452193003964D0 /* CharacterSet.swift in Sources */,
+				28B5CC451ECF97A2001271A1 /* UIImage.swift in Sources */,
 				288E55631E96EE910057153A /* Notification.swift in Sources */,
 				28440B6D1E79A64D00E00667 /* Dictionary.swift in Sources */,
 				280673D21E53D2CF00CD3518 /* Collection.swift in Sources */,
@@ -274,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B5CC471ECF9ABC001271A1 /* TimeIntervalTests.swift in Sources */,
 				2865456D1E45216B003964D0 /* StringTests.swift in Sources */,
 				280673D41E53D2FC00CD3518 /* CollectionTests.swift in Sources */,
 				28AD697C1E576B1500B69BA6 /* DateFormatterTests.swift in Sources */,

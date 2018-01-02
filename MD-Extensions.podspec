@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MD-Extensions'
-  s.version = '0.9.0'
+  s.version = '0.9'
   s.license = 'Proprietary'
   s.summary = 'Swift extensions for the iOS mobile team'
   s.homepage = 'https://github.com/markitondemand/Extensions'

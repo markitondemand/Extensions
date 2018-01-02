@@ -30,7 +30,7 @@ extension String {
     /// - Parameter from: The starting integer character point
     /// - Returns: The new substring
     public func substring(from: Int) -> String {
-        return self.substring(from: self.index(self.startIndex, offsetBy: from))
+        return String(self[self.index(startIndex, offsetBy: from)...])
     }
     
     /// Returns a substring from the start of the string to a given integer character point
@@ -38,7 +38,7 @@ extension String {
     /// - Parameter to: The ending character point
     /// - Returns: The new substring
     public func substring(to: Int) -> String {
-        return self.substring(to: self.index(self.startIndex, offsetBy: to))
+        return String(self[..<self.index(self.startIndex, offsetBy: to)])
     }
     
     
@@ -48,7 +48,7 @@ extension String {
     /// - Returns: The new substring
     public func substring(with: Range<Int>) -> String {
         let indexRange = self.index(startIndex, offsetBy: with.lowerBound)..<self.index(startIndex, offsetBy: with.upperBound)
-        return self.substring(with: indexRange)
+        return String(self[indexRange.lowerBound..<indexRange.upperBound])
     }
 }
 

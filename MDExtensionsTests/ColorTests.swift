@@ -50,7 +50,7 @@ class ColorTests: XCTestCase {
         // 80 is 50% of FF in HEX e.g. 50% alpha
         let color = UIColor(hexValue: "12345680")!
         
-        XCTAssertEqualWithAccuracy(color.cgColor.alpha, 0.5, accuracy: 0.01)
+        XCTAssertEqual(color.cgColor.alpha, 0.5, accuracy: 0.01)
     }
     
     func testComplexColor() {
@@ -89,16 +89,16 @@ class ColorTests: XCTestCase {
     
     func testGetIndividualColorValues() {
         let color = UIColor(red: 0.25, green: 0.5, blue: 0.75, alpha: 1.0)
-        XCTAssertEqualWithAccuracy(0.25, color.redValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(0.5, color.greenValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(0.75, color.blueValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(1.0, color.alphaValue!, accuracy: 0.01)
+        XCTAssertEqual(0.25, color.redValue!, accuracy: 0.01)
+        XCTAssertEqual(0.5, color.greenValue!, accuracy: 0.01)
+        XCTAssertEqual(0.75, color.blueValue!, accuracy: 0.01)
+        XCTAssertEqual(1.0, color.alphaValue!, accuracy: 0.01)
         
         let whiteColor = UIColor.white
-        XCTAssertEqualWithAccuracy(1.0, whiteColor.redValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(1.0, whiteColor.greenValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(1.0, whiteColor.blueValue!, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(1.0, whiteColor.alphaValue!, accuracy: 0.01)
+        XCTAssertEqual(1.0, whiteColor.redValue!, accuracy: 0.01)
+        XCTAssertEqual(1.0, whiteColor.greenValue!, accuracy: 0.01)
+        XCTAssertEqual(1.0, whiteColor.blueValue!, accuracy: 0.01)
+        XCTAssertEqual(1.0, whiteColor.alphaValue!, accuracy: 0.01)
     }
     
     func testGetHexValues() {

@@ -42,11 +42,11 @@ class StringTests: XCTestCase {
         XCTAssertEqual(sourceString.substring(from: 4), "Swift!")
         
         // substring to end index
-        XCTAssertEqual(sourceString.substring(to: sourceString.characters.count), "I ♡ Swift!")
+        XCTAssertEqual(sourceString.substring(to: sourceString.count), "I ♡ Swift!")
         XCTAssertEqual(sourceString.substring(to: 4), "I ♡ ")
         
         // substring between indeces
-        XCTAssertEqual(sourceString.substring(with: 0..<sourceString.characters.count), "I ♡ Swift!")
+        XCTAssertEqual(sourceString.substring(with: 0..<sourceString.count), "I ♡ Swift!")
         XCTAssertEqual(sourceString.substring(with: 2..<3), "♡")
         
         // test complex characters

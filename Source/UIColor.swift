@@ -16,19 +16,19 @@ extension UIColor {
         // Clean off any leading # if it is there.
         hexValue = hexValue.trimmingCharacters(in: CharacterSet(charactersIn: "#"))
         // Unsupported length
-        guard hexValue.characters.count == 6 || hexValue.characters.count == 8 else {
+        guard hexValue.count == 6 || hexValue.count == 8 else {
             return nil
         }
         
         var alphaComponent: CGFloat = 1.0
         // If input is 8 characters. extract the alpha value
-        if hexValue.characters.count == 8 {
-            guard let hexNumber = Int(hexValue.substring(from:hexValue.index(hexValue.endIndex, offsetBy: -2)), radix:16) else {
+        if hexValue.count == 8 {
+            guard let hexNumber = Int(hexValue[hexValue.index(hexValue.endIndex, offsetBy: -2)...], radix:16) else {
                 return nil
             }
             alphaComponent = CGFloat(hexNumber)/255.0
             
-            hexValue = hexValue.substring(to: hexValue.index(hexValue.endIndex, offsetBy:-2))
+            hexValue = String(hexValue[..<hexValue.index(hexValue.endIndex, offsetBy:-2)])
         }
         
         

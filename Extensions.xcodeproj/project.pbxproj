@@ -13,6 +13,8 @@
 		282680941E566AEA00A56838 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282680931E566AEA00A56838 /* DateTests.swift */; };
 		28440B6D1E79A64D00E00667 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B6C1E79A64D00E00667 /* Dictionary.swift */; };
 		28440B6F1E79A79000E00667 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B6E1E79A79000E00667 /* DictionaryTests.swift */; };
+		2859F8DD20656C7700A0725D /* NotificationHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859F8DC20656C7700A0725D /* NotificationHandle.swift */; };
+		2859F8DF20656CCB00A0725D /* NotificationHandleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859F8DE20656CCB00A0725D /* NotificationHandleTests.swift */; };
 		2865455A1E452117003964D0 /* MDExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286545511E452117003964D0 /* MDExtensions.framework */; };
 		286545611E452117003964D0 /* MDExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 286545531E452117003964D0 /* MDExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2865456B1E45216B003964D0 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286545681E45216B003964D0 /* ColorTests.swift */; };
@@ -50,6 +52,8 @@
 		28440B6E1E79A79000E00667 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		28440B711E79B45D00E00667 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		28440B721E79B45D00E00667 /* MD-Extensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MD-Extensions.podspec"; sourceTree = SOURCE_ROOT; };
+		2859F8DC20656C7700A0725D /* NotificationHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandle.swift; sourceTree = "<group>"; };
+		2859F8DE20656CCB00A0725D /* NotificationHandleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandleTests.swift; sourceTree = "<group>"; };
 		286545461E4520BB003964D0 /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
 		286545471E4520BB003964D0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		286545481E4520BB003964D0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */,
 				28F0412B1F0D5835002563DE /* Segue.swift */,
 				28FAB6921F2F950000E3104F /* Enumerable.swift */,
+				2859F8DC20656C7700A0725D /* NotificationHandle.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -141,6 +146,7 @@
 				28440B6E1E79A79000E00667 /* DictionaryTests.swift */,
 				28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */,
 				288A44191F2F96EA0074DFEC /* EnumPrintableTests.swift */,
+				2859F8DE20656CCB00A0725D /* NotificationHandleTests.swift */,
 			);
 			path = MDExtensionsTests;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 			files = (
 				2865456F1E452196003964D0 /* String.swift in Sources */,
 				28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */,
+				2859F8DD20656C7700A0725D /* NotificationHandle.swift in Sources */,
 				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
 				28FAB6931F2F950000E3104F /* Enumerable.swift in Sources */,
 				28F0412C1F0D5835002563DE /* Segue.swift in Sources */,
@@ -304,6 +311,7 @@
 				288A441A1F2F96EA0074DFEC /* EnumPrintableTests.swift in Sources */,
 				2865456B1E45216B003964D0 /* ColorTests.swift in Sources */,
 				282680941E566AEA00A56838 /* DateTests.swift in Sources */,
+				2859F8DF20656CCB00A0725D /* NotificationHandleTests.swift in Sources */,
 				28440B6F1E79A79000E00667 /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

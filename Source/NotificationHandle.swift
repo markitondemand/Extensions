@@ -46,4 +46,3 @@ public extension Notification.Name {
         return NotificationHandle(self, center: center, filterObject: filterObject, queue: queue, closure: closure)
     }
 }
-

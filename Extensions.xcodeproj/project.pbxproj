@@ -29,6 +29,7 @@
 		28B5CC451ECF97A2001271A1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC441ECF97A2001271A1 /* UIImage.swift */; };
 		28B5CC471ECF9ABC001271A1 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */; };
 		28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */; };
+		28BC87B920AF81E900D5F8DF /* UITraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC87B820AF81E900D5F8DF /* UITraitCollection.swift */; };
 		28F0412C1F0D5835002563DE /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0412B1F0D5835002563DE /* Segue.swift */; };
 		28FAB6931F2F950000E3104F /* Enumerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAB6921F2F950000E3104F /* Enumerable.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		28B5CC441ECF97A2001271A1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		28B5CC461ECF9ABC001271A1 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		28B9E5B81ECE39D00023DB2C /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		28BC87B820AF81E900D5F8DF /* UITraitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITraitCollection.swift; sourceTree = "<group>"; };
 		28F0412B1F0D5835002563DE /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		28FAB6921F2F950000E3104F /* Enumerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				28F0412B1F0D5835002563DE /* Segue.swift */,
 				28FAB6921F2F950000E3104F /* Enumerable.swift */,
 				2859F8DC20656C7700A0725D /* NotificationHandle.swift */,
+				28BC87B820AF81E900D5F8DF /* UITraitCollection.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -226,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Markit;
 				TargetAttributes = {
 					286545501E452117003964D0 = {
@@ -288,6 +291,7 @@
 				28B9E5B91ECE39D00023DB2C /* TimeInterval.swift in Sources */,
 				2859F8DD20656C7700A0725D /* NotificationHandle.swift in Sources */,
 				28AD697A1E5769D300B69BA6 /* Date.swift in Sources */,
+				28BC87B920AF81E900D5F8DF /* UITraitCollection.swift in Sources */,
 				28FAB6931F2F950000E3104F /* Enumerable.swift in Sources */,
 				28F0412C1F0D5835002563DE /* Segue.swift in Sources */,
 				286545701E452199003964D0 /* UIColor.swift in Sources */,
@@ -419,6 +423,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -426,6 +431,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -474,6 +480,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +488,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
